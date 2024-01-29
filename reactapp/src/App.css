@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E0E8F9;
+  color: #333333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.Box {
+  background-color: #A8D5BA;
+  width: 1000px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.item {
+  background-color: #C2E0CA;
+  margin: 2rem auto;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.item:hover .text-content {
+  background: linear-gradient(to right, #D3EAD5, #A8D5BA);
+}
+
+.img-content {
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.item .text-content {
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #35524A;
+  margin-bottom: 0.5rem;
+}
+
+.item .text-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.item .text-content p:last-child {
+  text-align: center;
+  margin-top: auto;
+}
+
+.item .text-content span {
+  font-weight: bold;
+  color: #007BFF;
+}
